@@ -92,7 +92,7 @@ button {
 
 ```
 7. Adicione e comite as alterações, com a mensagem de commit "atualizar cor de background".
-8. Resete o arquivo `style.css` para HEAD~1.
+8. Resete --hard o arquivo `style.css` para HEAD~1.
 9. Altere o arquivo `contact.html`, para o seguinte código:
 
 ```html
@@ -130,4 +130,4 @@ button {
 
 ```
 10. Adicione e comite as alterações, com a mensagem de commit "atualizar página de contato para receber telefone".
-11. Reverta o commit anterior.
+11. Reverta o commit HEAD.
