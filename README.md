@@ -178,6 +178,5 @@ p {
 24. Adicione e comite a alteração com a mensagem "atualiza cor de background nas páginas".
 25. Mude para a branch `master`.
 26. Mescle (faça um merge) a branch `home-page` na branch `master`, que tipo de merge aconteceu?
-27. Agora mescle (faça um merge) a branch `about-me` na branch `master`, que tipo de merge aconteceu?
-28. Agora mescle (faça um merge) a branch `about-me-feature` na branch `master`, que tipo de merge aconteceu?
-29. Se houver conflitos, ajuste-os e complete o processo de merge.
+27. Agora mescle (faça um merge) a branch `about-me` na branch `master`, que tipo de merge aconteceu? Esse merge vai gerar conflito, mantenha as mudanças da branch `about-me`.
+28. Agora mescle (faça um merge) a branch `about-me-feature` na branch `master`, que tipo de merge aconteceu? Esse merge vai gerar conflito, mantenha as mudanças da branch `master`.
