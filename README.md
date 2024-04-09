@@ -1,6 +1,6 @@
 # Exercício 5 - Merge
 
-1. Crie uma nova pasta chamada `Web`.
+1. Crie uma nova pasta chamada `exercicio-5-merge`.
 2. Crie um novo repositório git dentro da pasta (certifique-se de que não está em um repositório existente).
 3. Crie um novo arquivo chamado `index.html` (deixe-o vazio por enquanto).
 4. Crie um novo arquivo chamado `script.js` (deixe-o vazio por enquanto).
