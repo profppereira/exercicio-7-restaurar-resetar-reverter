@@ -1,9 +1,7 @@
 # Exercício 6 - Voltar a Commits Anteriores
 
 1. Liste todos os commits feitos na master.
-2. Volte ao commit antes de mesclar a branch `about-me-feature`.
-3. Imediatamente crie uma nova branch chamado `contact`.
-4. Crie um arquivo `contact.html`, adicione o seguinte:
+2. Altere o arquivo `contact.html`, para o seguinte código:
 
 ```html
 <!DOCTYPE html>
@@ -16,12 +14,15 @@
 </head>
 <body>
     <header>
-        <h1>Entre em Contato</h1>
+        <h1>Entre em Contato Comigo!</h1>
     </header>
     <div class="container">
         <form id="contactForm">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
+
+            <label for="tel">Telefone:</label>
+            <input type="tel" id="tel" name="tel" required>
 
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required>
@@ -36,10 +37,35 @@
 </html>
 
 ```
-
-5. Adicione o seguinte código ao final do arquivo `style.css` (abaixo do seletor `p`):
+3. Adicione o arquivo `contact.html` a staging area, mas não commita. Use git status para acompanhar os arquivos.
+4. Restaure o arquivo `contact.html` da staging area para o workspace
+5. Restaure o arquivo `contact.html` para que ele volte ao seu último commit.
+6. Altere o arquivo `style.css`, para o seguinte código:
 
 ```css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6a4dff;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+p {
+    line-height: 1.6;
+}
 form {
     margin-top: 20px;
 }
@@ -65,9 +91,43 @@ button {
 }
 
 ```
+7. Adicione e comite as alterações, com a mensagem de commit "atualizar cor de background".
+8. Resete o arquivo `style.css` para HEAD~1.
+9. Altere o arquivo `contact.html`, para o seguinte código:
 
-6. Adicione e comite as alterações, com a mensagem de commit "adicionar página de contato".
-7. Mude para a branch `master`.
-8. Mescle (faça um merge) a branch `contact` na branch `master`, que tipo de merge aconteceu?
-9. Se houver conflitos, ajuste-os e complete o processo de merge.
-10. Liste todos os commits feitos na master.
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Entre em Contato Comigo!</h1>
+    </header>
+    <div class="container">
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="tel">Telefone:</label>
+            <input type="tel" id="tel" name="tel" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
+
+```
+10. Adicione e comite as alterações, com a mensagem de commit "atualizar página de contato para receber telefone".
+11. Reverta o commit anterior.
