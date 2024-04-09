@@ -1,4 +1,4 @@
-# Exercício 6 - Voltar a Commits Anteriores
+# Exercício 7 - Restaurar Resetar e Reverter
 
 1. Liste todos os commits feitos na master.
 2. Altere o arquivo `contact.html`, para o seguinte código:
