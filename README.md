@@ -147,7 +147,7 @@ p {
 20. Mude para a branch `about-me`.
 21. Altere o texto da página substituindo tudo que estiver entre colchetes `[]`, por suas informações. Por exemplo, onde estiver `[Seu Nome]`, alterar pelo seu nome de fato, e assim sucessivamente.
 22. Adicione e comite a alteração com a mensagem "adicionar informações na página sobre mim".
-23. Ainda na branch `about-me`, altere o valor da propriedade `background-color` do seletor `body` para `#d90000`, de forma que o seletor fique o seguinte:
+23. Ainda na branch `about-me`, no arquivo `style.css`, adicione o seguinte:
 
 ```css
 body {
@@ -155,6 +155,23 @@ body {
     margin: 0;
     padding: 0;
     background-color: #d90000;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+p {
+    line-height: 1.6;
 }
 
 ```
